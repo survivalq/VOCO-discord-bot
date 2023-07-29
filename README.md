@@ -82,6 +82,7 @@ Here is the [link](https://github.com/survivalq/VOCO-discord-bot/blob/main/TUTOR
 * [Electron](https://www.electronjs.org/)
 * [Electron Forge](https://www.electronforge.io/)
 * [Discord.js](https://discord.js.org/#/)
+* [Vue3-Toastify](https://www.npmjs.com/package/vue3-toastify)
 
 ## License
 
