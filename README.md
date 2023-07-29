@@ -6,13 +6,20 @@
     A simple VOCO discord bot as a desktop web app made with Vue 3 and Electron.
     <br/>
     <br/>
-    <a href="https://github.com/survivalq/VOCO-discord-bot">Download Demo</a>
-    .
-    <a href="https://github.com/survivalq/VOCO-discord-bot/issues">Report Bug</a>
+    <a href="https://github.com/survivalq/VOCO-discord-bot" style="display: inline-block; margin: 0 5px;">
+      <img alt="Contributors" src="https://img.shields.io/github/contributors/survivalq/VOCO-discord-bot?color=dark-green">
+    </a>
+    <a href="https://github.com/survivalq/VOCO-discord-bot/issues" style="display: inline-block; margin: 0 5px;">
+      <img alt="Forks" src="https://img.shields.io/github/forks/survivalq/VOCO-discord-bot?style=social">
+    </a>
+    <a href="https://github.com/survivalq/VOCO-discord-bot" style="display: inline-block; margin: 0 5px;">
+      <img alt="Stargazers" src="https://img.shields.io/github/stars/survivalq/VOCO-discord-bot?style=social">
+    </a>
+    <a href="https://github.com/survivalq/VOCO-discord-bot" style="display: inline-block; margin: 0 5px;">
+      <img alt="License" src="https://img.shields.io/github/license/survivalq/VOCO-discord-bot">
+    </a>
   </p>
 </p>
-
-![Contributors](https://img.shields.io/github/contributors/survivalq/VOCO-discord-bot?color=dark-green) ![Forks](https://img.shields.io/github/forks/survivalq/VOCO-discord-bot?style=social) ![Stargazers](https://img.shields.io/github/stars/survivalq/VOCO-discord-bot?style=social) ![License](https://img.shields.io/github/license/survivalq/VOCO-discord-bot) 
 
 ## Table Of Contents
 
