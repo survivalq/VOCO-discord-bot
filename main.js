@@ -1,15 +1,24 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 const url = require('url')
 require('./discordjs/ipc');
+
+function handleSetTitle (event, title) {
+  const webContents = event.sender
+  const win = BrowserWindow.fromWebContents(webContents)
+  win.setTitle(title)
+}
+
+ipcMain.on('set-title', handleSetTitle)
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 950,
     height: 500,
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false, // Important for IPC; Check TUTORIAL.md
+      nodeIntegration: false,
+      contextIsolation: true, // Important for IPC (more secure https://www.electronjs.org/docs/tutorial/context-isolation)
+      preload: path.join(__dirname, 'preload.js')
     }
   })
 
@@ -20,7 +29,6 @@ function createWindow() {
       slashes: true
     })
   )
-  // mainWindow.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {

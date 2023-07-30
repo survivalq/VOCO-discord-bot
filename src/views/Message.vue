@@ -27,7 +27,6 @@
 <script>
 import { toast } from 'vue3-toastify';
 import TitleBase from '../components/titles/TitleBase.vue';
-const { ipcRenderer } = require('electron');
 
 export default {
   name: 'Message',
@@ -58,11 +57,7 @@ export default {
           });
         return;
       }
-
-      ipcRenderer.send('message', {
-        channelId: this.channelId,
-        message: this.message,
-      });
+      window.discordBotAPI.sendMessageToChannel(this.channelId, this.message);
     },
   },
 };

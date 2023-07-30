@@ -43,7 +43,7 @@ const router = createRouter({
 export default router;
 ```
 
-- Update your App.vue (example!) file to import Electron-related modules using require (You cannot use import for this):
+- Update your App.vue (example) file to use window.myAPI (This is important for IPC communication between the main and renderer process):
 ```js
 // App.vue (this is a example!)
 <template>
@@ -53,13 +53,11 @@ export default router;
 </template>
 
 <script>
-const { ipcRenderer } = require('electron'); // See how we use require here instead of import
-
 export default {
   name: 'App',
   methods: {
     sendMessageToElectron() {
-      ipcRenderer.send('message', 'Hello from the renderer process!'); // You must also build ipcMain in the main.js (electron) file to receive this message
+      window.myAPI.messageElectron('Hello Electron!'); // https://www.electronjs.org/docs/latest/tutorial/ipc - it shows how to use IPC and build a communication between the main and renderer process
     },
   },
 };
@@ -77,8 +75,8 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true, // Important for using require in the renderer process
-      contextIsolation: false, // Important for IPC communication between the main and renderer process
+      nodeIntegration: false, // Closes the nodeIntegration for security reasons
+      contextIsolation: true, // This is important for security reasons
     },
   });
 
