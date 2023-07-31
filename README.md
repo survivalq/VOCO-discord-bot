@@ -24,9 +24,10 @@
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
-* [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
+* [Download the app](#download-the-app)
+* [Built With](#built-with)
 * [License](#license)
 
 ## About The Project
