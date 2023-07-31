@@ -71,6 +71,9 @@ npm run make
 
 This will take time, but it will create a folder called `out` with the executable file inside.
 
+## Download the app
+Here is the release [link](https://github.com/survivalq/VOCO-discord-bot/releases/tag/v1.0.0) to download the pre-built app.
+
 ## Build your own Vue 3 + Electron project
 
 Here is the [link](https://github.com/survivalq/VOCO-discord-bot/blob/main/TUTORIAL.md) to the tutorial.
